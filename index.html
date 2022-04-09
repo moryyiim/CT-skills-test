@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>CT skills test</title>
+</head>
+
+<body>
+
+
+<!---------------- HOME ----------------->
+
+<div id='container'>
+	<section class='intro' id='home'>
+		<div class="flex flex-col max-w-screen-lg md:max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-24 lg:px-64">
+			<div class="p-3 flex flex-row items-center">
+				<a href="#home" class="m-auto"> 
+					<img src="images/Logo.png">
+				</a>
+			</div>
+			<nav class="text-white flex-col flex-grow m-auto md:pb-0 md:flex md:justify-end md:flex-row">
+				<a 
+					class="italic px-4 py-2 mt-2 text-xs font-semibold rounded-lg md:mt-0 hover:underline hover:text-slate-200 duration-500 ease-in-out" 
+					href="#history"> 
+						01. HISTORY
+				</a>
+				<a 
+					class="italic px-4 py-2 mt-2 text-xs font-semibold rounded-lg md:mt-0 md:ml-4 hover:underline hover:text-slate-200 duration-500 ease-in-out" 
+					href="#team">
+						02. TEAM
+				</a>
+			</nav>
+		</div>
+	</section>
+	
+	
+<!---------------- HISTORY ----------------->
+	
+	<section class='history' id='history'>
+		<div class='bg-white'>
+			<div class="flex flex-col items-center max-w-screen-lg md:max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-24 lg:px-64">
+				<div class="flex items-center">
+					<a href="#home" class="m-auto mr-2"> 
+						<img src="images/mtn_logo.jpg">
+					</a>
+					<a href="#home" class="m-auto"> 
+						<img src="images/Losangeleslogo.png">
+					</a>
+				</div>
+				<div class="text-white flex-grow m-auto md:pb-0 md:flex md:justify-end md:flex-row">
+					<a 
+						id='history'
+						class="italic text-slate-500 px-4 py-2  text-xs font-semibold rounded-lg md:mt-0 hover:underline hover:text-black duration-500 ease-in-out" 
+						href="#history"> 
+							01. HISTORY
+					</a>
+					<a 
+						
+						class="italic text-slate-500 px-4 py-2 text-xs font-semibold rounded-lg md:mt-0 md:ml-4 hover:underline hover:text-black duration-500 ease-in-out" 
+						href="#team">
+							02. TEAM
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div id='flex-container' class='flex lg:flex-col md:flex-col flex-col max-w-screen-lg md:max-w-screen-2xl pt-12 px-4 mx-auto  md:flex-row md:px-64 lg:px-64'>
+			<div id='header-banner'>
+				<a href="#home" class="flex flex-row items-center justify-between"> 
+					<img src="images/01.png">
+				</a>
+			</div>
+				<p id='text-paragraph' class='m-auto lg:px-16'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi.
+					Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunct quam. Cras scelerisque id quam sed
+					dignissim Pellentesque urna nunc, gravida quis henderit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+				</p>
+		</div>
+
+
+
+<!-------------- CAROUSEL ------------------>
+
+			<div id='carousel' class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/climber.png" alt="climber">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/mountain.png" alt="mountain">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/climber.png" alt="climber">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/mountain.png" alt="mountain">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/climber.png" alt="climber">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/mountain.png" alt="mountain">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/climber.png" alt="climber">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/mountain.png" alt="mountain">
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 4,
+	spaceBetween: 20,
+	slidesPerGroup: 2,
+	loop: true,
+	loopFillGroupWithBlank: true,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });
+</script>
+
+
+		
+<!---------------- TEAM ----------------->	
+	
+	<section class='team' id='team'>
+		<div class='bg-white'>
+			<div id='climb' class="flex max-w-screen-lg md:max-w-screen-2xl px-4 mx-auto md:items-center md:flex-row md:px-6 lg:px-8">
+				<div class="flex flex-row items-center justify-between">
+					<a href="#home" class="m-auto"> 
+						<img src="images/02.jpg">
+					</a>
+				</div>
+				<div id='text' class='pt-4 pb-4'>
+					<p>
+						Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac,
+						tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+					</p>
+				</div>
+			</div>
+		</div>
+
+<!---------------- TABS ------------------>
+
+
+<div class='bg-slate-600 flex flex-col text-slate-400 text-xl items-center  mx-auto md:flex-row md:px-52 lg:px-52'>
+	<div class='items-center hover:bg-gray-300 px-2 py-2 flex flex-col md:items-center hover:text-slate-600 duration-500 ease-in-out'>
+		<button class="accordion hover:underline tracking-tighter font-semibold">MOUNTAIN 1</button>
+			<div class="panel">
+				<p class='text-sm'>Lorem ipsum...</p>
+			</div>
+	</div>
+	<div class='items-center hover:bg-gray-300 px-2 py-2 flex flex-col hover:text-slate-600 duration-500 ease-in-out'>
+		<button class="accordion hover:underline tracking-tighter font-semibold">MOUNTAIN 2</button>
+			<div class='panel'>
+				<p class='text-sm'>Lorem ipsum...</p>
+			</div>
+	</div>
+</div>
+
+		
+<!------------------- SCHEDULE ---------------------->
+
+		<div id='box-container' class='md:items-center mx-20 md:mx-20 px-20'>
+			<div>
+				<li 
+					id='schedule'
+					class='text-slate-500 tracking-tighter mb-2'
+				>
+					<img src="images/SCHEDULE.png" alt="Schedule">
+				</li>
+				<ul class='grid grid-cols-2'>
+					<li class='mr-4'>25 Nov 2016</li>
+					<li class='ml-4'>Vestibulum viverra</li>
+					<li class='mr-4'>28 Nov 2016</li>
+					<li class='ml-4'>Vestibulum viverra</li>
+					<li class='mr-4 mt-4'>18 Dec 2016</li>
+					<li class='ml-4 mt-4'>Vestibulum viverra</li>
+					<li class='mr-4 mt-4'>7 Jan 2017</li>
+					<li class='ml-4 mt-4'>Vestibulum viverra</li>
+				</ul>
+			</div>
+		</div>
+		
+	</section>
+
+	<div class='bg-slate-600 p-4'>
+		<div>
+			<div class="flex flex-col items-center max-w-screen-lg md:max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-24 lg:px-64">
+				<div class='flex items-center mr-2 mb-1'>
+					<a href="#home"> 
+						<img src="images/Logo.png">
+					</a>
+				</div>
+					<a href="#home"> 
+						<img src="images/LOSANGELESMOUNTAINS.png">
+					</a>
+				<div class="flex-grow m-auto md:pb-0 md:flex md:justify-end md:flex-row pt-2 ">
+						<img src="images/copyright.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src='index.js'></script>
+
+</body>
+
+ </html>
